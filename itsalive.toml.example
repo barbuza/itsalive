@@ -1,0 +1,21 @@
+SlackToken = "<TOKEN>"
+SlackChannel = "monitoring"
+BotName = "alivebot"
+
+[[items]]
+Name = "localhost"
+URL = "http://127.0.0.1:8000"
+OKStatuses = [200]
+CheckInterval = "1s"
+OkPeriods = 4
+AlarmPeriods = 2
+HttpTimeout = "1s"
+
+[[items]]
+Name = "google"
+URL = "https://google.com"
+OKStatuses = [200]
+CheckInterval = "10s"
+OkPeriods = 3
+AlarmPeriods = 6
+HttpTimeout = "10s"
